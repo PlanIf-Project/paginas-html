@@ -1,0 +1,35 @@
+/* GLOBAL */
+:root {
+    --cor1: #B2BFCA;
+    --cor2: #6F9ABF;
+    --cor3: #51718C;
+    --cor4: #383C40;
+    --cor5: #253340;
+    --cor6: #000000;
+    --cor7: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+main {
+    background-color: var(--cor1);
+    height: 94.8vh;
+    
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.input-group {
+    border: 1px solid var(--cor3);
+    border-radius: 25px;
+    padding: 10px;
+}
