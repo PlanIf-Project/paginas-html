@@ -7,6 +7,7 @@
     --cor5: #253340;
     --cor6: #000000;
     --cor7: #ffffff;
+    --cor8: #DE3A58;
 }
 
 * {
@@ -24,12 +25,64 @@ main {
 
 section {
     display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 1200px;
+    margin: auto;
+    /*display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-around;*/
 }
-.input-group {
-    border: 1px solid var(--cor3);
+.menu-lateral {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.botoes {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    background-color: var(--cor3);
+    color: var(--cor7);
+    border-radius: 20px;
+    border: none;
+    width: 150px;
+    height: 30px;
+    margin: 5px 0;
+}
+
+.button {
+    background-color: var(--cor3);
+}
+
+.excluir {
+    background-color: var(--cor8);
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    float: right;
+}
+
+.card {
+    background-color: var(--cor7);
+    border: 2px solid var(--cor3);
     border-radius: 25px;
-    padding: 10px;
+    width: 250px;
+    height: 100px;
+    /*padding: 30px 75px;*/
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
