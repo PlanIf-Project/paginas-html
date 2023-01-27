@@ -1,55 +1,40 @@
-/* GLOBAL */
-:root {
-    --cor1: #B2BFCA;
-    --cor2: #6F9ABF;
-    --cor3: #51718C;
-    --cor4: #383C40;
-    --cor5: #253340;
-    --cor6: #000000;
-    --cor7: #ffffff;
-    --cor8: #DE3A58;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-}
-
-main {
-    background-color: var(--cor1);
-    height: 94.8vh;
-    
-}
-
 section {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: flex-start;
-    width: 1200px;
+    align-items: stretch;
+    width: 1750px;
     margin: auto;
-    /*display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;*/
 }
+
 .menu-lateral {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-around;
-    padding: 20px;
+}
+
+.menu-lateral h1 {
+    font-size: 35px;
+}
+
+.menu-lateral .nome{
+    margin-left: 20px;
+    font-size: 25px;
+}
+
+.menu-lateral .email{
+    margin-left: 20px;
+    font-size: 20px;
 }
 
 .botoes {
     display: flex;
     flex-direction: column;
+    margin: auto;
 }
 
 button {
-    background-color: var(--cor3);
     color: var(--cor7);
     border-radius: 20px;
     border: none;
@@ -65,24 +50,46 @@ button {
 .excluir {
     background-color: var(--cor8);
 }
-
-.cards {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-around;
-    float: right;
-}
-
 .card {
     background-color: var(--cor7);
     border: 2px solid var(--cor3);
     border-radius: 25px;
     width: 250px;
     height: 100px;
-    /*padding: 30px 75px;*/
     font-size: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-decoration: none !important;
 }
+
+.tarefas {
+    position: absolute;
+    left: 900px;
+    top: 75px;
+}
+
+.disciplinas {
+    position: absolute;
+    left: 1200px;
+    top: 75px;
+}
+
+.habitos {
+    position: absolute;
+    left: 900px;
+    top: 200px;
+}
+
+.anotacoes {
+    position: absolute;
+    left: 1200px;
+    top: 200px;
+}
+
+.horarios {
+    position: absolute;
+    left: 1050px;
+    top: 325px;
+}
+
